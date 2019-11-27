@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+body > * {
+    width: 100%;
+}
+header {
+    height: 100px;
+    background-color: red;
+}
+.wrapper {
+    display: flex;
+    /* height: 100%; */
+    /* flex: 1 1 auto; */
+    flex-grow: 1;
+    /* flex-shrink: 1;
+    flex-basis: auto; */
+    flex-direction: column;
+}
+nav {
+    height: 80px; 
+    background-color: orange;
+}
+section {
+    height: 80%;
+    background-color: purple;
+}
+aside {
+    height: 20%;
+    background-color: blue;
+}
+footer {
+    height: 50px;
+    background-color: green;
+}
+
+/* Media Queries go at the bottom because of the cascade 
+
+    We want to add styles that are further donw the .css file
+
+*/
+@media screen and (min-width: 600px){
+    .wrapper {
+        flex-direction: row;
+    }
+    .wrapper > * {
+        height: 100%;
+        /* width: 100% */
+    }
+
+    header {
+        background-color: darkblue;
+    }
+    nav {
+        width: 20%;
+        background-color: gold;
+    }
+    section {
+        width: 65%;
+        background-color: black;
+    }
+    aside {
+        width: 15%;
+        background-color: gold;
+    }
+    footer {
+        background-color: darkblue;
+    }
+
+}
+
+@media screen and (min-width: 800px){
+    header {
+        background-color: red;
+    }
+    nav {
+        background-color: yellow;
+    }
+    section {
+        background-color: green;
+    }
+    aside {
+        background-color: rgb(0, 98, 255);
+    }
+    footer {
+        background-color: purple;
+    }
+}
