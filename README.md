@@ -17,13 +17,16 @@
 
 # What are breakpoints? 
 
-- 
+- The if-conditions for media queries
+- A threshold where a media query is triggered
 
 # Where should I set my breakpoints? 
 
--
+- approach #1: Goldilocks (small, medium, large)
+- approach #2: depends on wherever the design starts to look crappy
 
 # What are three ways of handling responsive images? 
 
--
-
+- #1. Background images in CSS (background-size: cover)
+- #2. Use srcset to specify different images for different resolutions
+- #3. Use <picture> for differently cropped images
